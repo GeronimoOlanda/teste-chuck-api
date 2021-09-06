@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function App() {
+const Home = () => {
   const [value, setValue] = useState('');
 
   useEffect(() => {
@@ -19,6 +19,6 @@ function App() {
       <p key={value.id}>{value.joke}</p>
     </div>
   );
-}
+};
 
-export default App;
+export default Home;
