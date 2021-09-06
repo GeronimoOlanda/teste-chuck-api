@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-
+import { Card } from '../../Card/';
 const Home = () => {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState({});
 
   useEffect(() => {
     getValue();
@@ -15,9 +15,9 @@ const Home = () => {
     setValue(data.value);
   };
   return (
-    <div className="App">
-      <p key={value.id}>{value.joke}</p>
-    </div>
+    <>
+      <Card value={value} />
+    </>
   );
 };
 
