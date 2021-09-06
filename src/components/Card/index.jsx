@@ -1,5 +1,6 @@
 import React from 'react';
 import P from 'prop-types';
+
 export const Card = ({ value }) => {
   return (
     <div className="App">
