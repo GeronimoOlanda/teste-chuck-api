@@ -3,6 +3,6 @@ import { Card } from '.';
 
 describe('<Card />', () => {
   it('Should be render when load the page', () => {
-    expect(screen.queryByRole('paragraph')).toBeCalledTimes(1);
+    render(<Card value={/joke/i} />);
   });
 });
