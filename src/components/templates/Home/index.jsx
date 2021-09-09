@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-
 import { Buttonn } from '../../Button';
 import { Card } from '../../Card/';
+import { Icon } from '../../Icon';
 
 const Home = () => {
   const [value, setValue] = useState({});
@@ -25,8 +25,10 @@ const Home = () => {
 
     setValue(data.value);
   };
+
   return (
     <>
+      <Icon />
       <Buttonn />
       <Card value={value} />
     </>
