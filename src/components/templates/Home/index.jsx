@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Button } from '../../Button';
 import { Card } from '../../Card/';
 const Home = () => {
   const [value, setValue] = useState({});
@@ -11,11 +12,11 @@ const Home = () => {
     const response = await fetch(`http://api.icndb.com/jokes/random?firstName=John&lastName=Doe`);
     const data = await response.json();
 
-    console.log(data);
     setValue(data.value);
   };
   return (
     <>
+      <Button />
       <Card value={value} />
     </>
   );
