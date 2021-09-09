@@ -19,6 +19,7 @@ const Home = () => {
     document.title = `${head.title}`;
   });
 
+  // fazendo fetch dos dados
   const getValue = async () => {
     const response = await fetch(`http://api.icndb.com/jokes/random?firstName=John&lastName=Doe`);
     const data = await response.json();
